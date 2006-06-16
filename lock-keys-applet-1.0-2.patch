@@ -1,0 +1,171 @@
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' lock-keys-applet-1.0-orig/CYGWIN-PATCHES/README lock-keys-applet-1.0/CYGWIN-PATCHES/README
+--- lock-keys-applet-1.0-orig/CYGWIN-PATCHES/README	1969-12-31 18:00:00.000000000 -0600
++++ lock-keys-applet-1.0/CYGWIN-PATCHES/README	2005-10-02 18:23:43.453125000 -0500
+@@ -0,0 +1,141 @@
++lock-keys-applet
++-------------------------------------------
++GNOME Panel applet which shows the status of the lock keys
++
++Runtime requirements:
++  cygwin-1.5.18-1
++  GConf2-2.10.1-1
++  ORBit2-2.12.3-1
++  atk-runtime-1.9.1-1
++  expat-1.95.8-1
++  glib2-runtime-2.6.5-1
++  gnome-keyring-0.4.5-1
++  gnome-panel-2.10.2-1
++  gnome-vfs2-2.10.1-1
++  gtk2-x11-runtime-2.6.8-1
++  libXft2-2.1.6-1
++  libart_lgpl2-2.3.17-1
++  libaudiofile0-0.2.6-2
++  libbonobo2-2.10.1-1
++  libbonoboui2-2.10.1-1
++  libesound0-0.2.36-1
++  libfontconfig1-2.2.2-1
++  libfreetype26-2.1.9-1
++  libgnome2-2.10.1-1
++  libgnomecanvas2-2.10.2-1
++  libgnomeui2-2.10.1-1
++  libiconv2-1.9.2-1
++  libintl3-0.14.1-1
++  libjpeg62-6b-11
++  libpopt0-1.6.4-4
++  libxml2-2.6.20-3
++  minires-1.00-1
++  openssl-0.9.8-2
++  pango-runtime-1.8.1-1
++  xorg-x11-bin-dlls-6.8.2.0-1
++  zlib-1.2.3-1
++
++Build requirements:
++  cygwin-1.5.18-1
++  autoconf2.5-2.59-3
++  automake1.9-1.9.6-1
++  binutils-20050610-1
++  gawk-3.1.5-1
++  gcc-core-3.4.4-1
++  intltool-0.33-1
++  make-3.80-1
++  pkgconfig-0.17.2-2
++  scrollkeeper-0.3.14-2
++  sed-4.1.4-1
++
++  GConf2-2.10.1-1
++  ORBit2-devel-2.12.3-1
++  atk-devel-1.9.1-1
++  expat-1.95.8-1
++  gettext-0.14.1-1
++  glib2-devel-2.6.5-1
++  gnome-keyring-0.4.5-1
++  gnome-panel-2.10.2-1
++  gnome-vfs2-2.10.1-1
++  gtk2-x11-devel-2.6.8-1
++  jpeg-6b-11
++  libXft-devel-2.1.6-1
++  libart_lgpl2-2.3.17-1
++  libaudiofile-devel-0.2.6-2
++  libbonobo2-devel-2.10.1-1
++  libbonoboui2-2.10.1-1
++  libesound-devel-0.2.36-1
++  libfontconfig-devel-2.2.2-1
++  libfreetype2-devel-2.1.9-1
++  libgnome2-2.10.1-1
++  libgnomecanvas2-2.10.2-1
++  libgnomeui2-2.10.1-1
++  libiconv-1.9.2-1
++  libxml2-devel-2.6.20-3
++  minires-devel-1.00-1
++  openssl-devel-0.9.8-2
++  pango-devel-1.8.1-1
++  popt-1.6.4-4
++  xorg-x11-devel-6.8.2.0-1
++  zlib-1.2.3-1
++
++Canonical homepage:
++  http://mfcn.ilo.de/led_applet/
++
++-------------------------------------------
++
++Build instructions:
++  unpack lock-keys-applet-1.0-2-src.tar.bz2
++    if you use setup to install this src package, it will be
++	 unpacked under /usr/src automatically
++  cd /usr/src
++  ./lock-keys-applet-1.0-2.sh all
++
++This will create:
++  /usr/src/lock-keys-applet-1.0-2-src.tar.bz2
++  /usr/src/lock-keys-applet-1.0-2.tar.bz2
++
++-------------------------------------------
++
++Files included in the binary package:
++
++  /etc/postinstall/lock-keys-applet.sh
++  /usr/lib/bonobo/servers/GNOME_LockKeysApplet.server
++  /usr/lib/panel-2.0/lock-keys-applet.exe
++  /usr/share/doc/Cygwin/lock-keys-applet-1.0.README
++  /usr/share/doc/lock-keys-applet-1.0/ABOUT-NLS
++  /usr/share/doc/lock-keys-applet-1.0/AUTHORS
++  /usr/share/doc/lock-keys-applet-1.0/ChangeLog
++  /usr/share/doc/lock-keys-applet-1.0/COPYING
++  /usr/share/doc/lock-keys-applet-1.0/INSTALL
++  /usr/share/doc/lock-keys-applet-1.0/NEWS
++  /usr/share/doc/lock-keys-applet-1.0/README
++  /usr/share/doc/lock-keys-applet-1.0/TODO
++  /usr/share/gnome/help/lock-keys-applet/C/figures/led_applet.png
++  /usr/share/gnome/help/lock-keys-applet/C/figures/led_applet_settings.png
++  /usr/share/gnome/help/lock-keys-applet/C/legal.xml
++  /usr/share/gnome/help/lock-keys-applet/C/lock-keys-applet.xml
++  /usr/share/gnome/help/lock-keys-applet/de/figures/led_applet.png
++  /usr/share/gnome/help/lock-keys-applet/de/figures/led_applet_settings.png
++  /usr/share/gnome/help/lock-keys-applet/de/legal.xml
++  /usr/share/gnome/help/lock-keys-applet/de/lock-keys-applet.xml
++  /usr/share/locale/de/LC_MESSAGES/lock-keys-applet.mo
++  /usr/share/locale/hu/LC_MESSAGES/lock-keys-applet.mo
++  /usr/share/locale/sv/LC_MESSAGES/lock-keys-applet.mo
++  /usr/share/omf/lock-keys-applet/lock-keys-applet-C.omf
++  /usr/share/omf/lock-keys-applet/lock-keys-applet-de.omf
++  /usr/share/pixmaps/lock-keys-applet.png
++
++------------------
++
++Port Notes:
++
++----- version 1.0-2 -----
++Rebuilt for GNOME 2.10; applet installed into /usr/lib/panel-2.0.
++
++----- version 1.0-1 -----
++Initial release for Cygwin.
++
++
++Cygwin port maintained by:
++http://cygwinports.dotsrc.org/
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' lock-keys-applet-1.0-orig/CYGWIN-PATCHES/setup.hint lock-keys-applet-1.0/CYGWIN-PATCHES/setup.hint
+--- lock-keys-applet-1.0-orig/CYGWIN-PATCHES/setup.hint	1969-12-31 18:00:00.000000000 -0600
++++ lock-keys-applet-1.0/CYGWIN-PATCHES/setup.hint	2005-10-02 18:23:43.671875000 -0500
+@@ -0,0 +1,4 @@
++category: Gnome
++requires: cygwin gnome-panel libgnomeui2
++sdesc: "GNOME Panel applet which shows the status of the lock keys"
++ldesc: "GNOME Panel applet which shows the status of the lock keys"
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' lock-keys-applet-1.0-orig/omf.make lock-keys-applet-1.0/omf.make
+--- lock-keys-applet-1.0-orig/omf.make	2002-07-19 07:35:18.000000000 -0500
++++ lock-keys-applet-1.0/omf.make	2005-06-02 10:01:44.000000000 -0500
+@@ -42,7 +42,7 @@
+ 	for file in $(omffile); do \
+ 		$(INSTALL_DATA) $$file.out $(DESTDIR)$(omf_dest_dir)/$$file; \
+ 	done
+-	-scrollkeeper-update -p $(scrollkeeper_localstate_dir) -o $(DESTDIR)$(omf_dest_dir)
++#	-scrollkeeper-update -p $(scrollkeeper_localstate_dir) -o $(DESTDIR)$(omf_dest_dir)
+ 
+ uninstall-local-omf:
+ 	-for file in $(srcdir)/*.omf; do \
+@@ -50,4 +50,4 @@
+ 		rm -f $(omf_dest_dir)/$$basefile; \
+ 	done
+ 	-rmdir $(omf_dest_dir)
+-	-scrollkeeper-update -p $(scrollkeeper_localstate_dir)
++#	-scrollkeeper-update -p $(scrollkeeper_localstate_dir)

@@ -1,0 +1,4 @@
+category: Gnome
+requires: cygwin gnome-panel libgnomeui2
+sdesc: "GNOME Panel applet which shows the status of the lock keys"
+ldesc: "GNOME Panel applet which shows the status of the lock keys"
